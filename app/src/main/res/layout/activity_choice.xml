@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/c_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnDisease_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="질병 정보들만 표시" />
+        <Button
+            android:id="@+id/btnShelter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="대피소만 표시" />
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="질병 정보+대피소 모두 표시" />
+    </LinearLayout>
+</LinearLayout>
